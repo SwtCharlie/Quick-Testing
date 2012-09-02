@@ -9,4 +9,7 @@ class Dog < Mammal
   def speak
     'bark'
   end
+  def run
+    'I ran'
+  end
 end
