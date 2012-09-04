@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    colorize (0.5.8)
     diff-lcs (1.1.3)
     ffi (1.1.5)
     guard (1.3.2)
@@ -9,12 +10,20 @@ GEM
     guard-bundler (1.0.0)
       bundler (~> 1.0)
       guard (~> 1.1)
+    guard-cloudformation (0.0.3)
+      colorize
+      guard
     guard-rspec (1.2.1)
       guard (>= 1.1)
+    httparty (0.8.3)
+      multi_json (~> 1.0)
+      multi_xml
     listen (0.4.7)
       rb-fchange (~> 0.0.5)
       rb-fsevent (~> 0.9.1)
       rb-inotify (~> 0.8.8)
+    multi_json (1.3.6)
+    multi_xml (0.5.1)
     rb-fchange (0.0.5)
       ffi
     rb-fsevent (0.9.1)
@@ -34,7 +43,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorize
   guard
   guard-bundler
+  guard-cloudformation
   guard-rspec
+  httparty
   rspec
