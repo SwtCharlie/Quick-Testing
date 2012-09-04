@@ -1,4 +1,4 @@
-class LocalVariableScopeDemo
+class LocalVariableDemo
   def tung
     local_var1 = 'tung'
   end
@@ -11,3 +11,15 @@ class LocalVariableScopeDemo
     tung # i can only access it with a method
   end
 end
+
+class InstanceVariableDemo
+  def set_instance_vars
+    @instance_var1 = 'tung1'
+    @instance_var2 = 'tung2'
+  end
+  def puts_instance_vars
+    puts "@instance_var1 #{@instance_var1.inspect}"
+    puts "@instance_var1 #{@instance_var1.inspect}"
+  end
+end
+
