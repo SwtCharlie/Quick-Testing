@@ -20,6 +20,9 @@ class LocalVariableDemo
   def puts_global
     puts $my_global_var
   end
+  def set_global_var=(val)
+    $my_global_var = val
+  end
 end
 
 class InstanceVariableDemo
