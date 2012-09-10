@@ -34,6 +34,7 @@ class InstanceVariableDemo
   def set_instance_vars
     @instance_var1 = 'tung1'
     @instance_var2 = 'tung2'
+    1
   end
   def puts_instance_vars
     puts "@instance_var1 #{@instance_var1.inspect}"
